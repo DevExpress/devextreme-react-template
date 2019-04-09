@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/devextreme-react-template/static/media/Roboto-500.90d16760.woff2"
   },
   {
-    "revision": "ea3b36f6585f288b376f",
-    "url": "/devextreme-react-template/static/css/main.38772af5.chunk.css"
+    "revision": "dbfebf562ac59f41b142",
+    "url": "/devextreme-react-template/static/css/main.a27e0495.chunk.css"
   },
   {
     "revision": "d08840599e05db7345652d3d417574a9",
@@ -32,16 +32,16 @@ self.__precacheManifest = [
     "url": "/devextreme-react-template/static/media/dxiconsmaterial.de33805c.ttf"
   },
   {
-    "revision": "d26871e8149b5759f814fd3c7a4f784b",
-    "url": "/devextreme-react-template/static/media/Roboto-300.d26871e8.woff2"
-  },
-  {
     "revision": "73f0a88bbca1bec19fb1303c689d04c6",
     "url": "/devextreme-react-template/static/media/Roboto-400.73f0a88b.woff2"
   },
   {
-    "revision": "ea3b36f6585f288b376f",
-    "url": "/devextreme-react-template/static/js/main.ea3b36f6.chunk.js"
+    "revision": "d26871e8149b5759f814fd3c7a4f784b",
+    "url": "/devextreme-react-template/static/media/Roboto-300.d26871e8.woff2"
+  },
+  {
+    "revision": "dbfebf562ac59f41b142",
+    "url": "/devextreme-react-template/static/js/main.dbfebf56.chunk.js"
   },
   {
     "revision": "b52fac2bb93c5858f3f2675e4b52e1de",
@@ -52,16 +52,16 @@ self.__precacheManifest = [
     "url": "/devextreme-react-template/static/media/Roboto-300.c73eb1ce.woff"
   },
   {
+    "revision": "1d6594826615607f6dc860bb49258acb",
+    "url": "/devextreme-react-template/static/media/Roboto-500.1d659482.woff"
+  },
+  {
     "revision": "35b07eb2f8711ae08d1f58c043880930",
     "url": "/devextreme-react-template/static/media/Roboto-400.35b07eb2.woff"
   },
   {
     "revision": "50d75e48e0a3ddab1dd15d6bfb9d3700",
     "url": "/devextreme-react-template/static/media/Roboto-700.50d75e48.woff"
-  },
-  {
-    "revision": "1d6594826615607f6dc860bb49258acb",
-    "url": "/devextreme-react-template/static/media/Roboto-500.1d659482.woff"
   },
   {
     "revision": "fc84e998bc29b297ea20321e4c90b6ed",
@@ -80,7 +80,7 @@ self.__precacheManifest = [
     "url": "/devextreme-react-template/static/css/1.75f2b5b2.chunk.css"
   },
   {
-    "revision": "0a1b9018256ad1e8b53f0414dc5f8174",
+    "revision": "ec73b83dddb79b2733b4618af076370f",
     "url": "/devextreme-react-template/index.html"
   }
 ];
