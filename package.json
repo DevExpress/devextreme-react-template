@@ -18,8 +18,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "build-themes": "devextreme build",
-    "postinstall": "npm run build-themes",
-    "deploy": "npm run build && gh-pages -d build"
+    "postinstall": "npm run build-themes"
   },
   "eslintConfig": {
     "extends": "react-app"
