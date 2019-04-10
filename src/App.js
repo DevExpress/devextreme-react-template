@@ -8,13 +8,13 @@ import './App.scss';
 import './dx-styles.scss';
 import { Footer, LoginForm } from './components';
 import {
-  SideNavOuterToolbar,
-  // SideNavInnerToolbar,
+  SideNavOuterToolbar as SideNavBar,
+  // SideNavInnerToolbar as SideNavBar,
   SingleCard
 } from './layouts';
 import './themes/generated/theme.additional.css';
 import './themes/generated/theme.base.css';
-import { sizes, subscibe, unsibscribe } from './utils/media-query';
+import { sizes, subscribe, unsubscribe } from './utils/media-query';
 
 const LoginContainer = ({ logIn }) => <LoginForm onLoginClick={logIn} />;
 
@@ -25,7 +25,7 @@ const NotAuthPage = (props) => (
 );
 
 const AuthPage = (props) => (
-  <SideNavOuterToolbar menuItems={navigation} title={appInfo.title} {...props}>
+  <SideNavBar menuItems={navigation} title={appInfo.title} {...props}>
     <Switch>
       {routes.map(item => (
         <Route
@@ -43,7 +43,7 @@ const AuthPage = (props) => (
       All trademarks or registered trademarks are property of their
       respective owners.
     </Footer>
-  </SideNavOuterToolbar>
+  </SideNavBar>
 );
 
 class App extends Component {
@@ -54,20 +54,8 @@ class App extends Component {
       loggedIn: true,
       screenSizeClass: this.getScreenSizeClass()
     };
-  }
 
-  componentDidMount() {
-    subscibe(this.screenSizeChanged);
-  }
-
-  componentWillUnmount() {
-    unsibscribe(this.screenSizeChanged);
-  }
-
-  render() {
-    const { loggedIn } = this.state;
-
-    const userMenuItems = [
+    this.userMenuItems = [
       {
         text: 'Profile',
         icon: 'user'
@@ -78,11 +66,22 @@ class App extends Component {
         onClick: this.logOut
       }
     ];
+  }
 
-    const classes = `app ${this.state.screenSizeClass}`;
+  componentDidMount() {
+    subscribe(this.screenSizeChanged);
+  }
+
+  componentWillUnmount() {
+    unsubscribe(this.screenSizeChanged);
+  }
+
+  render() {
+    const { loggedIn } = this.state;
+
     return (
-      <div className={classes}>
-        <Router>{loggedIn ? <AuthPage userMenuItems={userMenuItems} /> : <NotAuthPage logIn={this.logIn} />}</Router>
+      <div className={`app ${this.state.screenSizeClass}`}>
+        <Router>{loggedIn ? <AuthPage userMenuItems={this.userMenuItems} /> : <NotAuthPage logIn={this.logIn} />}</Router>
       </div>
     );
   }
