@@ -4,7 +4,8 @@ import DataGrid, {
   Column,
   Pager,
   Paging,
-  FilterRow
+  FilterRow,
+  Lookup
 } from 'devextreme-react/data-grid';
 
 export default () => {
@@ -68,7 +69,7 @@ export default () => {
           caption={'Priority'}
           hidingPriority={5}
         >
-          <dxo-lookup
+          <Lookup
             dataSource={priority}
             valueExpr={'value'}
             displayExpr={'name'}
