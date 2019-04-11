@@ -119,7 +119,7 @@ Run `npm run build-themes` to rebuild themes.
 
 ### <a name="create-custom-theme"></a>Create a Custom Theme
 
-You can use the DevExtreme Theme Builder to create a custom theme based on predefined themes. For this, import *src\themes\metadata.base.json* or *src\themes\metadata.additional.json* into the [Theme Builder](https://js.devexpress.com/Documentation/Guide/Themes/Theme_Builder/), modify the theme, and export the result to the initial file.
+You can use the DevExtreme ThemeBuilder to create a custom theme based on predefined themes. For this, import *src\themes\metadata.base.json* or *src\themes\metadata.additional.json* into the [ThemeBuilder](https://js.devexpress.com/Documentation/Guide/Themes_and_Styles/ThemeBuilder/), modify the theme, and export the result to the initial file.
 
 Run `npm run build` to rebuild themes.
 
