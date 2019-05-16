@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/devextreme-react-template/static/css/main.37ceed9b.chunk.css",
+    "main.css": "/devextreme-react-template/static/css/main.bcb5bd8b.chunk.css",
     "main.js": "/devextreme-react-template/static/js/main.d664e7f4.chunk.js",
     "main.js.map": "/devextreme-react-template/static/js/main.d664e7f4.chunk.js.map",
     "runtime~main.js": "/devextreme-react-template/static/js/runtime~main.0bb1a71c.js",
@@ -9,10 +9,10 @@
     "static/js/2.55b39e09.chunk.js": "/devextreme-react-template/static/js/2.55b39e09.chunk.js",
     "static/js/2.55b39e09.chunk.js.map": "/devextreme-react-template/static/js/2.55b39e09.chunk.js.map",
     "index.html": "/devextreme-react-template/index.html",
-    "precache-manifest.aed86b6f42c7a6a99b37305387f2581b.js": "/devextreme-react-template/precache-manifest.aed86b6f42c7a6a99b37305387f2581b.js",
+    "precache-manifest.66027cf00436873dc951de0f00c307e0.js": "/devextreme-react-template/precache-manifest.66027cf00436873dc951de0f00c307e0.js",
     "service-worker.js": "/devextreme-react-template/service-worker.js",
     "static/css/2.d86f76bf.chunk.css.map": "/devextreme-react-template/static/css/2.d86f76bf.chunk.css.map",
-    "static/css/main.37ceed9b.chunk.css.map": "/devextreme-react-template/static/css/main.37ceed9b.chunk.css.map",
+    "static/css/main.bcb5bd8b.chunk.css.map": "/devextreme-react-template/static/css/main.bcb5bd8b.chunk.css.map",
     "static/media/theme.additional.css": "/devextreme-react-template/static/media/dxiconsmaterial.ef3cacd9.woff"
   }
 }
