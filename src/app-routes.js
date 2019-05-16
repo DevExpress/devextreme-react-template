@@ -13,4 +13,4 @@ export default [
     path: '/home',
     component: HomePage
   }
-];
+  ];

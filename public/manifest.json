@@ -1,6 +1,6 @@
 {
   "short_name": "React App",
-  "name": "Create React App Sample",
+  "name": "devextreme-app",
   "icons": [
     {
       "src": "favicon.ico",

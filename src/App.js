@@ -1,3 +1,5 @@
+import './themes/generated/theme.base.css';
+import './themes/generated/theme.additional.css';
 import 'devextreme/dist/css/dx.common.css';
 import React, { Component } from 'react';
 import { HashRouter as Router, Redirect, Route, Switch } from 'react-router-dom';
@@ -8,12 +10,9 @@ import './App.scss';
 import './dx-styles.scss';
 import { Footer, LoginForm } from './components';
 import {
-  SideNavOuterToolbar as SideNavBar,
-  // SideNavInnerToolbar as SideNavBar,
+  SideNavOuterToolbar as SideNavBarLayout,
   SingleCard
 } from './layouts';
-import './themes/generated/theme.additional.css';
-import './themes/generated/theme.base.css';
 import { sizes, subscribe, unsubscribe } from './utils/media-query';
 
 const LoginContainer = ({ logIn }) => <LoginForm onLoginClick={logIn} />;
@@ -25,7 +24,7 @@ const NotAuthPage = (props) => (
 );
 
 const AuthPage = (props) => (
-  <SideNavBar menuItems={navigation} title={appInfo.title} {...props}>
+  <SideNavBarLayout menuItems={navigation} title={appInfo.title} {...props}>
     <Switch>
       {routes.map(item => (
         <Route
@@ -43,7 +42,7 @@ const AuthPage = (props) => (
       All trademarks or registered trademarks are property of their
       respective owners.
     </Footer>
-  </SideNavBar>
+  </SideNavBarLayout>
 );
 
 class App extends Component {
