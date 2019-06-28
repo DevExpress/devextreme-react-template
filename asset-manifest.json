@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/devextreme-react-template/static/css/main.bcb5bd8b.chunk.css",
-    "main.js": "/devextreme-react-template/static/js/main.d664e7f4.chunk.js",
-    "main.js.map": "/devextreme-react-template/static/js/main.d664e7f4.chunk.js.map",
+    "main.css": "/devextreme-react-template/static/css/main.989e28fd.chunk.css",
+    "main.js": "/devextreme-react-template/static/js/main.d49cad04.chunk.js",
+    "main.js.map": "/devextreme-react-template/static/js/main.d49cad04.chunk.js.map",
     "runtime~main.js": "/devextreme-react-template/static/js/runtime~main.0bb1a71c.js",
     "runtime~main.js.map": "/devextreme-react-template/static/js/runtime~main.0bb1a71c.js.map",
-    "static/css/2.d86f76bf.chunk.css": "/devextreme-react-template/static/css/2.d86f76bf.chunk.css",
-    "static/js/2.55b39e09.chunk.js": "/devextreme-react-template/static/js/2.55b39e09.chunk.js",
-    "static/js/2.55b39e09.chunk.js.map": "/devextreme-react-template/static/js/2.55b39e09.chunk.js.map",
+    "static/css/2.a2ebca7e.chunk.css": "/devextreme-react-template/static/css/2.a2ebca7e.chunk.css",
+    "static/js/2.cf5b4ac4.chunk.js": "/devextreme-react-template/static/js/2.cf5b4ac4.chunk.js",
+    "static/js/2.cf5b4ac4.chunk.js.map": "/devextreme-react-template/static/js/2.cf5b4ac4.chunk.js.map",
     "index.html": "/devextreme-react-template/index.html",
-    "precache-manifest.66027cf00436873dc951de0f00c307e0.js": "/devextreme-react-template/precache-manifest.66027cf00436873dc951de0f00c307e0.js",
+    "precache-manifest.3c885454fb169696ba557f349700dc91.js": "/devextreme-react-template/precache-manifest.3c885454fb169696ba557f349700dc91.js",
     "service-worker.js": "/devextreme-react-template/service-worker.js",
-    "static/css/2.d86f76bf.chunk.css.map": "/devextreme-react-template/static/css/2.d86f76bf.chunk.css.map",
-    "static/css/main.bcb5bd8b.chunk.css.map": "/devextreme-react-template/static/css/main.bcb5bd8b.chunk.css.map",
+    "static/css/2.a2ebca7e.chunk.css.map": "/devextreme-react-template/static/css/2.a2ebca7e.chunk.css.map",
+    "static/css/main.989e28fd.chunk.css.map": "/devextreme-react-template/static/css/main.989e28fd.chunk.css.map",
     "static/media/theme.additional.css": "/devextreme-react-template/static/media/dxiconsmaterial.ef3cacd9.woff"
   }
 }
