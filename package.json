@@ -3,14 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-scripts": "3.0.1",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-scripts": "3.3.0",
     "node-sass": "^4.11.0",
     "react-router-dom": "^5.0.0",
     "react-app-polyfill": "^1.0.0",
-    "devextreme": "19.1-stable",
-    "devextreme-react": "19.1-stable"
+    "devextreme": "19.2-stable",
+    "devextreme-themebuilder": "19.2-stable",
+    "devextreme-react": "19.2-stable"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -36,6 +40,6 @@
     ]
   },
   "devDependencies": {
-    "devextreme-cli": "1.1.4"
+    "devextreme-cli": "1.1.9"
   }
 }
