@@ -1,6 +1,6 @@
+import 'devextreme/dist/css/dx.common.css';
 import './themes/generated/theme.base.css';
 import './themes/generated/theme.additional.css';
-import 'devextreme/dist/css/dx.common.css';
 import React, { Component } from 'react';
 import { HashRouter as Router, Redirect, Route, Switch } from 'react-router-dom';
 import appInfo from './app-info';
