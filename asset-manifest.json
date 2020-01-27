@@ -1,18 +1,26 @@
 {
   "files": {
-    "main.css": "/devextreme-react-template/static/css/main.989e28fd.chunk.css",
-    "main.js": "/devextreme-react-template/static/js/main.d49cad04.chunk.js",
-    "main.js.map": "/devextreme-react-template/static/js/main.d49cad04.chunk.js.map",
-    "runtime~main.js": "/devextreme-react-template/static/js/runtime~main.0bb1a71c.js",
-    "runtime~main.js.map": "/devextreme-react-template/static/js/runtime~main.0bb1a71c.js.map",
-    "static/css/2.a2ebca7e.chunk.css": "/devextreme-react-template/static/css/2.a2ebca7e.chunk.css",
-    "static/js/2.cf5b4ac4.chunk.js": "/devextreme-react-template/static/js/2.cf5b4ac4.chunk.js",
-    "static/js/2.cf5b4ac4.chunk.js.map": "/devextreme-react-template/static/js/2.cf5b4ac4.chunk.js.map",
+    "main.css": "/devextreme-react-template/static/css/main.21d98573.chunk.css",
+    "main.js": "/devextreme-react-template/static/js/main.7e18cce8.chunk.js",
+    "main.js.map": "/devextreme-react-template/static/js/main.7e18cce8.chunk.js.map",
+    "runtime-main.js": "/devextreme-react-template/static/js/runtime-main.4c81c4f3.js",
+    "runtime-main.js.map": "/devextreme-react-template/static/js/runtime-main.4c81c4f3.js.map",
+    "static/css/2.c2635046.chunk.css": "/devextreme-react-template/static/css/2.c2635046.chunk.css",
+    "static/js/2.aac910e9.chunk.js": "/devextreme-react-template/static/js/2.aac910e9.chunk.js",
+    "static/js/2.aac910e9.chunk.js.map": "/devextreme-react-template/static/js/2.aac910e9.chunk.js.map",
     "index.html": "/devextreme-react-template/index.html",
-    "precache-manifest.3c885454fb169696ba557f349700dc91.js": "/devextreme-react-template/precache-manifest.3c885454fb169696ba557f349700dc91.js",
+    "precache-manifest.b69e8a64540fe05199f6c559130c2395.js": "/devextreme-react-template/precache-manifest.b69e8a64540fe05199f6c559130c2395.js",
     "service-worker.js": "/devextreme-react-template/service-worker.js",
-    "static/css/2.a2ebca7e.chunk.css.map": "/devextreme-react-template/static/css/2.a2ebca7e.chunk.css.map",
-    "static/css/main.989e28fd.chunk.css.map": "/devextreme-react-template/static/css/main.989e28fd.chunk.css.map",
-    "static/media/theme.additional.css": "/devextreme-react-template/static/media/dxiconsmaterial.ef3cacd9.woff"
-  }
+    "static/css/2.c2635046.chunk.css.map": "/devextreme-react-template/static/css/2.c2635046.chunk.css.map",
+    "static/css/main.21d98573.chunk.css.map": "/devextreme-react-template/static/css/main.21d98573.chunk.css.map",
+    "static/js/2.aac910e9.chunk.js.LICENSE": "/devextreme-react-template/static/js/2.aac910e9.chunk.js.LICENSE",
+    "static/media/theme.additional.css": "/devextreme-react-template/static/media/dxiconsmaterial.ade00e8f.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4c81c4f3.js",
+    "static/css/2.c2635046.chunk.css",
+    "static/js/2.aac910e9.chunk.js",
+    "static/css/main.21d98573.chunk.css",
+    "static/js/main.7e18cce8.chunk.js"
+  ]
 }
