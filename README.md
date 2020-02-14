@@ -2,7 +2,7 @@
 
 The DevExtreme React Template allows you to create an application with several views and a hierarchical menu (see the [live preview](https://devexpress.github.io/devextreme-react-template)).
 
-![DevExtreme-React-Template](https://user-images.githubusercontent.com/2280467/55784081-79798480-5ab8-11e9-8257-1ef9599b90a6.png)
+![DevExtreme-React-Template](https://user-images.githubusercontent.com/2280467/74529812-a8af1c80-4f39-11ea-96fb-efd94d19dbab.png)
 
 You can use [DevExtreme CLI](https://github.com/DevExpress/devextreme-cli) commands to modify, add, and delete views, configure the menu, and change themes.
 
