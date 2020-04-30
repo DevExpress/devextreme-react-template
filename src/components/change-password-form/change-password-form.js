@@ -1,47 +1,40 @@
 import React, { useState, useRef, useCallback } from 'react';
-import { Link, useHistory } from 'react-router-dom';
+import { useHistory, useParams } from 'react-router-dom';
 import Form, {
   Item,
   Label,
   ButtonItem,
   ButtonOptions,
   RequiredRule,
-  EmailRule
+  CustomRule,
 } from 'devextreme-react/form';
 import LoadIndicator from 'devextreme-react/load-indicator';
-import { useAuth } from '../../contexts/auth';
-import './login-form.scss';
 
 export default function (props) {
   const history = useHistory();
-  const { logIn } = useAuth();
   const [loading, setLoading] = useState(false);
   const formData = useRef({});
+  const { recoveryCode } = useParams();
 
   const onSubmit = useCallback(async (e) => {
     e.preventDefault();
-    const { email, password } = formData.current;
+    const { password } = formData.current;
     setLoading(true);
 
-    await logIn(email, password);
-  }, [logIn]);
+    // Send reset password request
+    console.log(password, recoveryCode);
 
-  const onCreateAccountClick = useCallback(() => {
-    history.push('/create-account');
-  }, [history]);
+    history.push('/login');
+  }, [history, recoveryCode]);
+
+  const confirmPassword = useCallback(
+    ({ value }) => value === formData.current.password,
+    []
+  );
 
   return (
-    <form className={'login-form'} onSubmit={onSubmit}>
+    <form onSubmit={onSubmit}>
       <Form formData={formData.current} disabled={loading}>
-        <Item
-          dataField={'email'}
-          editorType={'dxTextBox'}
-          editorOptions={emailEditorOptions}
-        >
-          <RequiredRule message="Email is required" />
-          <EmailRule message="Email is invalid" />
-          <Label visible={false} />
-        </Item>
         <Item
           dataField={'password'}
           editorType={'dxTextBox'}
@@ -51,10 +44,15 @@ export default function (props) {
           <Label visible={false} />
         </Item>
         <Item
-          dataField={'rememberMe'}
-          editorType={'dxCheckBox'}
-          editorOptions={rememberMeEditorOptions}
+          dataField={'confirmedPassword'}
+          editorType={'dxTextBox'}
+          editorOptions={confirmedPasswordEditorOptions}
         >
+          <RequiredRule message="Password is required" />
+          <CustomRule
+            message={'Passwords do not match'}
+            validationCallback={confirmPassword}
+          />
           <Label visible={false} />
         </Item>
         <ButtonItem>
@@ -67,28 +65,15 @@ export default function (props) {
               {
                 loading
                   ? <LoadIndicator width={'24px'} height={'24px'} visible={true} />
-                  : 'Sign In'
+                  : 'Continue'
               }
             </span>
           </ButtonOptions>
-        </ButtonItem>
-        <Item>
-          <div className={'link'}>
-            <Link to={'/reset-password'}>Forgot password?</Link>
-          </div>
-        </Item>
-        <ButtonItem>
-          <ButtonOptions
-            text={'Create an account'}
-            width={'100%'}
-            onClick={onCreateAccountClick}
-          />
         </ButtonItem>
       </Form>
     </form>
   );
 }
 
-const emailEditorOptions = { stylingMode: 'filled', placeholder: 'Email', mode: 'email' };
 const passwordEditorOptions = { stylingMode: 'filled', placeholder: 'Password', mode: 'password' };
-const rememberMeEditorOptions = { text: 'Remember me', elementAttr: { class: 'form-text' } };
+const confirmedPasswordEditorOptions = { stylingMode: 'filled', placeholder: 'Confirm Password', mode: 'password' };
