@@ -1,5 +1,5 @@
 import React, { useState, useRef, useCallback } from 'react';
-import { Link, useHistory } from 'react-router-dom';
+import { Link, useHistory } from "react-router-dom";
 import Form, {
   Item,
   Label,
@@ -9,29 +9,30 @@ import Form, {
   EmailRule
 } from 'devextreme-react/form';
 import LoadIndicator from 'devextreme-react/load-indicator';
-import { useAuth } from '../../contexts/auth';
-import './login-form.scss';
+import notify from 'devextreme/ui/notify';
+import './reset-password-form.scss'
+
+const notificationText = 'We\'ve sent a link to reset your password. Check your inbox.';
 
 export default function (props) {
   const history = useHistory();
-  const { logIn } = useAuth();
   const [loading, setLoading] = useState(false);
   const formData = useRef({});
 
   const onSubmit = useCallback(async (e) => {
     e.preventDefault();
-    const { email, password } = formData.current;
+    const { email } = formData.current;
     setLoading(true);
 
-    await logIn(email, password);
-  }, [logIn]);
+    // Send reset password request
+    console.log(email);
 
-  const onCreateAccountClick = useCallback(() => {
-    history.push('/create-account');
+    history.push('/login');
+    notify(notificationText, 'success', 2500);
   }, [history]);
 
   return (
-    <form className={'login-form'} onSubmit={onSubmit}>
+    <form className={'reset-password-form'} onSubmit={onSubmit}>
       <Form formData={formData.current} disabled={loading}>
         <Item
           dataField={'email'}
@@ -42,23 +43,9 @@ export default function (props) {
           <EmailRule message="Email is invalid" />
           <Label visible={false} />
         </Item>
-        <Item
-          dataField={'password'}
-          editorType={'dxTextBox'}
-          editorOptions={passwordEditorOptions}
-        >
-          <RequiredRule message="Password is required" />
-          <Label visible={false} />
-        </Item>
-        <Item
-          dataField={'rememberMe'}
-          editorType={'dxCheckBox'}
-          editorOptions={rememberMeEditorOptions}
-        >
-          <Label visible={false} />
-        </Item>
         <ButtonItem>
           <ButtonOptions
+            elementAttr={submitButtonAttributes}
             width={'100%'}
             type={'default'}
             useSubmitBehavior={true}
@@ -67,28 +54,20 @@ export default function (props) {
               {
                 loading
                   ? <LoadIndicator width={'24px'} height={'24px'} visible={true} />
-                  : 'Sign In'
+                  : 'Reset my password'
               }
             </span>
           </ButtonOptions>
         </ButtonItem>
         <Item>
-          <div className={'link'}>
-            <Link to={'/reset-password'}>Forgot password?</Link>
+          <div className={'login-link'}>
+            Return to <Link to={'/login'}>Sign In</Link>
           </div>
         </Item>
-        <ButtonItem>
-          <ButtonOptions
-            text={'Create an account'}
-            width={'100%'}
-            onClick={onCreateAccountClick}
-          />
-        </ButtonItem>
       </Form>
     </form>
   );
 }
 
 const emailEditorOptions = { stylingMode: 'filled', placeholder: 'Email', mode: 'email' };
-const passwordEditorOptions = { stylingMode: 'filled', placeholder: 'Password', mode: 'password' };
-const rememberMeEditorOptions = { text: 'Remember me', elementAttr: { class: 'form-text' } };
+const submitButtonAttributes = { class: 'submit-button' };

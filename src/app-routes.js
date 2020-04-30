@@ -1,6 +1,7 @@
+import { withNavigationWatcher } from './contexts/navigation';
 import { HomePage, DisplayDataPage, ProfilePage } from './pages';
 
-export default [
+const routes = [
   {
     path: '/display-data',
     component: DisplayDataPage
@@ -13,4 +14,11 @@ export default [
     path: '/home',
     component: HomePage
   }
-  ];
+];
+
+export default routes.map(route => {
+  return {
+    ...route,
+    component: withNavigationWatcher(route.component)
+  };
+});
