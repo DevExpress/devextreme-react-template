@@ -4,7 +4,7 @@ The DevExtreme React Template allows you to generate an application with a navig
 
 ![DevExtreme-React-Template](https://user-images.githubusercontent.com/2280467/74529812-a8af1c80-4f39-11ea-96fb-efd94d19dbab.png)
 
-The DevExtreme React Template is created with [Create React App](https://github.com/facebook/create-react-app) and uses [DevExtreme React components](https://js.devexpress.com/Documentation/Guide/React_Components/DevExtreme_React_Components/).
+The DevExtreme React Template is created with [Create React App](https://create-react-app.dev/) and uses [DevExtreme React components](https://js.devexpress.com/Documentation/Guide/React_Components/DevExtreme_React_Components/).
 
 ## Getting Started
 
