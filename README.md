@@ -1,6 +1,6 @@
 # DevExtreme React Template
 
-The DevExtreme React Template allows you to generate an application with a navigation menu and several sample views in a responsive layout (see a [live preview](https://devexpress.github.io/devextreme-react-template)). You can customize the generated application as you wish.
+The DevExtreme React Template is a web application with a navigation menu and several sample views in a responsive layout (see a [live preview](https://devexpress.github.io/devextreme-react-template)).
 
 ![DevExtreme-React-Template](https://user-images.githubusercontent.com/2280467/74529812-a8af1c80-4f39-11ea-96fb-efd94d19dbab.png)
 
@@ -8,7 +8,7 @@ The DevExtreme React Template is created with [Create React App](https://create-
 
 ## Getting Started
 
-For full information about the DevExtreme React Template, refer to the following help topic: [Create a DevExtreme Application](https://js.devexpress.com/Documentation/Guide/React_Components/Create_a_DevExtreme_Application/).
+For full information about the DevExtreme React Template and how to customize it, refer to the following help topic: [Create a DevExtreme Application](https://js.devexpress.com/Documentation/Guide/React_Components/Create_a_DevExtreme_Application/).
 
 ## License
 
