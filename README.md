@@ -12,4 +12,5 @@ For more information about the DevExtreme React Template and how to customize it
 
 **DevExtreme React Template is released as a MIT-licensed (free and open-source) add-on to DevExtreme.**
 
-Familiarize yourself with the [DevExtreme License](https://js.devexpress.com/Licensing/). [Free trial is available](http://js.devexpress.com/Buy/).
+- [DevExtreme License](https://js.devexpress.com/Licensing/)
+- [Free trial](http://js.devexpress.com/Buy/)
