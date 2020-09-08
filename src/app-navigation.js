@@ -1,7 +1,9 @@
+import { appPath } from "./app-routes";
+
 export const navigation = [
   {
     text: 'Home',
-    path: '/home',
+    path: appPath.home,
     icon: 'home'
   },
   {
@@ -10,11 +12,11 @@ export const navigation = [
     items: [
       {
         text: 'Profile',
-        path: '/profile'
+        path: appPath.profile
       },
       {
         text: 'Tasks',
-        path: '/tasks'
+        path: appPath.tasks
       }
     ]
   }
