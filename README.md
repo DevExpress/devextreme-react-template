@@ -6,7 +6,7 @@ The DevExtreme React Template is a React application with a navigation menu and 
 
 ## Getting Started
 
-For more information about the DevExtreme React Template and how to customize it, refer to the following help topic: [Create a DevExtreme Application](https://js.devexpress.com/Documentation/Guide/React_Components/Create_a_DevExtreme_Application/).
+For more information about the DevExtreme React Template and how to customize it, refer to the following help topic: [Application Template](https://js.devexpress.com/Documentation/Guide/React_Components/Application_Template/).
 
 ## License
 
