@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/devextreme-react-template/static/css/main.5e7c7fd6.chunk.css",
-    "main.js": "/devextreme-react-template/static/js/main.31a170d3.chunk.js",
-    "main.js.map": "/devextreme-react-template/static/js/main.31a170d3.chunk.js.map",
-    "runtime-main.js": "/devextreme-react-template/static/js/runtime-main.70c88178.js",
-    "runtime-main.js.map": "/devextreme-react-template/static/js/runtime-main.70c88178.js.map",
-    "static/css/2.53f37c92.chunk.css": "/devextreme-react-template/static/css/2.53f37c92.chunk.css",
-    "static/js/2.4d0be1c9.chunk.js": "/devextreme-react-template/static/js/2.4d0be1c9.chunk.js",
-    "static/js/2.4d0be1c9.chunk.js.map": "/devextreme-react-template/static/js/2.4d0be1c9.chunk.js.map",
-    "static/js/3.888112c9.chunk.js": "/devextreme-react-template/static/js/3.888112c9.chunk.js",
-    "static/js/3.888112c9.chunk.js.map": "/devextreme-react-template/static/js/3.888112c9.chunk.js.map",
+    "main.css": "/devextreme-react-template/static/css/main.b2a95394.chunk.css",
+    "main.js": "/devextreme-react-template/static/js/main.876489fe.chunk.js",
+    "main.js.map": "/devextreme-react-template/static/js/main.876489fe.chunk.js.map",
+    "runtime-main.js": "/devextreme-react-template/static/js/runtime-main.939d33fa.js",
+    "runtime-main.js.map": "/devextreme-react-template/static/js/runtime-main.939d33fa.js.map",
+    "static/css/2.1deeacde.chunk.css": "/devextreme-react-template/static/css/2.1deeacde.chunk.css",
+    "static/js/2.1de9d28b.chunk.js": "/devextreme-react-template/static/js/2.1de9d28b.chunk.js",
+    "static/js/2.1de9d28b.chunk.js.map": "/devextreme-react-template/static/js/2.1de9d28b.chunk.js.map",
+    "static/js/3.6f3a1cc4.chunk.js": "/devextreme-react-template/static/js/3.6f3a1cc4.chunk.js",
+    "static/js/3.6f3a1cc4.chunk.js.map": "/devextreme-react-template/static/js/3.6f3a1cc4.chunk.js.map",
     "index.html": "/devextreme-react-template/index.html",
-    "static/css/2.53f37c92.chunk.css.map": "/devextreme-react-template/static/css/2.53f37c92.chunk.css.map",
-    "static/css/main.5e7c7fd6.chunk.css.map": "/devextreme-react-template/static/css/main.5e7c7fd6.chunk.css.map",
-    "static/js/2.4d0be1c9.chunk.js.LICENSE.txt": "/devextreme-react-template/static/js/2.4d0be1c9.chunk.js.LICENSE.txt",
+    "static/css/2.1deeacde.chunk.css.map": "/devextreme-react-template/static/css/2.1deeacde.chunk.css.map",
+    "static/css/main.b2a95394.chunk.css.map": "/devextreme-react-template/static/css/main.b2a95394.chunk.css.map",
+    "static/js/2.1de9d28b.chunk.js.LICENSE.txt": "/devextreme-react-template/static/js/2.1de9d28b.chunk.js.LICENSE.txt",
     "static/media/theme.additional.css": "/devextreme-react-template/static/media/dxiconsmaterial.9bea124e.woff2"
   },
   "entrypoints": [
-    "static/js/runtime-main.70c88178.js",
-    "static/css/2.53f37c92.chunk.css",
-    "static/js/2.4d0be1c9.chunk.js",
-    "static/css/main.5e7c7fd6.chunk.css",
-    "static/js/main.31a170d3.chunk.js"
+    "static/js/runtime-main.939d33fa.js",
+    "static/css/2.1deeacde.chunk.css",
+    "static/js/2.1de9d28b.chunk.js",
+    "static/css/main.b2a95394.chunk.css",
+    "static/js/main.876489fe.chunk.js"
   ]
 }
