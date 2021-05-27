@@ -27,7 +27,7 @@ export default () => (
           <span> and includes the following DevExtreme components:</span>
         </p>
         <ul>
-          <li><a href={'https://js.devexpress.com/Documentation/Guide/Widgets/DataGrid/Overview/'} target={'_blank'} rel={'noopener noreferrer'}>DataGrid</a></li>
+          <li><a href={'https://js.devexpress.com/Documentation/Guide/UI_Components/DataGrid/Getting_Started_with_DataGrid/'} target={'_blank'} rel={'noopener noreferrer'}>DataGrid</a></li>
           <li><a href={'https://js.devexpress.com/Documentation/Guide/Widgets/Form/Overview/'} target={'_blank'} rel={'noopener noreferrer'}>Form</a></li>
           <li><a href={'https://js.devexpress.com/Documentation/Guide/Widgets/Drawer/Getting_Started_with_Navigation_Drawer/'} target={'_blank'} rel={'noopener noreferrer'}>Drawer</a></li>
         </ul>
@@ -35,10 +35,10 @@ export default () => (
         <p>To customize your DevExtreme React application further, please refer to the following help topics:</p>
     
         <ul>
-          <li><a href={'https://js.devexpress.com/Documentation/Guide/React_Components/Create_a_DevExtreme_Application/#Layouts'} target={'_blank'} rel={'noopener noreferrer'}>Layouts</a></li>
-          <li><a href={'https://js.devexpress.com/Documentation/Guide/React_Components/Create_a_DevExtreme_Application/#Add_a_New_View'} target={'_blank'} rel={'noopener noreferrer'}>Add a New View</a></li>
-          <li><a href={'https://js.devexpress.com/Documentation/Guide/React_Components/Create_a_DevExtreme_Application/#Configure_the_Navigation_Menu'} target={'_blank'} rel={'noopener noreferrer'}>Configure the Navigation Menu</a></li>
-          <li><a href={'https://js.devexpress.com/Documentation/Guide/React_Components/Create_a_DevExtreme_Application/#Configure_Themes'} target={'_blank'} rel={'noopener noreferrer'}>Configure Themes</a></li>        
+          <li><a href={'https://js.devexpress.com/Documentation/Guide/React_Components/Application_Template/#Layouts'} target={'_blank'} rel={'noopener noreferrer'}>Layouts</a></li>
+          <li><a href={'https://js.devexpress.com/Documentation/Guide/React_Components/Application_Template/#Add_a_New_View'} target={'_blank'} rel={'noopener noreferrer'}>Add a New View</a></li>
+          <li><a href={'https://js.devexpress.com/Documentation/Guide/React_Components/Application_Template/#Configure_the_Navigation_Menu'} target={'_blank'} rel={'noopener noreferrer'}>Configure the Navigation Menu</a></li>
+          <li><a href={'https://js.devexpress.com/Documentation/Guide/React_Components/Application_Template/#Configure_Themes'} target={'_blank'} rel={'noopener noreferrer'}>Configure Themes</a></li>        
         </ul>
 
         <p>
