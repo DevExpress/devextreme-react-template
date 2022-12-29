@@ -13,8 +13,8 @@
     "node-sass": "^7.0.3",
     "react-router-dom": "^5.0.0",
     "react-app-polyfill": "^1.0.0",
-    "devextreme": "^21.2.3",
-    "devextreme-react": "^21.2.3"
+    "devextreme": "^22.2.3",
+    "devextreme-react": "^22.2.3"
   },
   "scripts": {
     "start": "react-scripts start",
