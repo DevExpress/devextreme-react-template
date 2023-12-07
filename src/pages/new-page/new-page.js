@@ -1,6 +1,7 @@
 import React from 'react';
 import './new-page.scss';
 
+// eslint-disable-next-line
 export default () => (
   <React.Fragment>
     <h2 className={'content-block'}>New Page</h2>
