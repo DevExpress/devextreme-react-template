@@ -34,7 +34,9 @@ jobs:
         npm i devextreme@$(find . -name DevExpress-devextreme-internal-*.tgz)
 
     - name: Build
-      run: npm run build
+      run: |
+        npm pkg set homepage='https://devexpress.github.io/devextreme-react-template'
+        npm run build
 
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@ba1486788b0490a235422264426c45848eac35c6
