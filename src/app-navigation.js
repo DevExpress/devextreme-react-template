@@ -17,10 +17,5 @@ export const navigation = [
         path: '/tasks'
       }
     ]
-  }, 
-  {
-    text: 'New Page',
-    path: '/new-page',
-    icon: 'folder'
   }
   ];
