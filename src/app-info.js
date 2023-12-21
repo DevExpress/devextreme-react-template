@@ -1,3 +1,5 @@
-export default {
-  title: 'DevExtreme App'
+const appInfo = {
+    title: 'DevExtreme App'
 };
+export default appInfo;
+
