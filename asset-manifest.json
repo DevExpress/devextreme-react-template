@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/devextreme-react-template/static/css/main.59da3ce5.css",
-    "main.js": "/devextreme-react-template/static/js/main.2b9d5ad2.js",
-    "static/js/787.755f6c8a.chunk.js": "/devextreme-react-template/static/js/787.755f6c8a.chunk.js",
+    "main.css": "/devextreme-react-template/static/css/main.89bedfb6.css",
+    "main.js": "/devextreme-react-template/static/js/main.56f49574.js",
+    "static/js/787.5349e3d5.chunk.js": "/devextreme-react-template/static/js/787.5349e3d5.chunk.js",
     "static/media/Roboto-500.ttf": "/devextreme-react-template/static/media/Roboto-500.0fcd45fbfc419c42c8b9.ttf",
     "static/media/Roboto-400.ttf": "/devextreme-react-template/static/media/Roboto-400.6bede58e856278b0f8f1.ttf",
     "static/media/Roboto-700.ttf": "/devextreme-react-template/static/media/Roboto-700.17451a4c1cd55e33ac57.ttf",
@@ -15,16 +15,16 @@
     "static/media/Roboto-700.woff2": "/devextreme-react-template/static/media/Roboto-700.92fbd4e93cf0a5dbebaa.woff2",
     "static/media/Roboto-400.woff2": "/devextreme-react-template/static/media/Roboto-400.64cfb66c866ea50cad47.woff2",
     "static/media/Roboto-300.woff2": "/devextreme-react-template/static/media/Roboto-300.c27d89ac77468ae18f28.woff2",
-    "static/media/dxiconsmaterial.woff": "/devextreme-react-template/static/media/dxiconsmaterial.9fecc2a944664bd22d13.woff",
-    "static/media/dxiconsmaterial.ttf": "/devextreme-react-template/static/media/dxiconsmaterial.46608dad971e25487e22.ttf",
-    "static/media/dxiconsmaterial.woff2": "/devextreme-react-template/static/media/dxiconsmaterial.22475389a08e008fe0a8.woff2",
+    "static/media/dxiconsmaterial.woff": "/devextreme-react-template/static/media/dxiconsmaterial.841efe1f52b7145b147c.woff",
+    "static/media/dxiconsmaterial.ttf": "/devextreme-react-template/static/media/dxiconsmaterial.b2bfa238977b50b509dc.ttf",
+    "static/media/dxiconsmaterial.woff2": "/devextreme-react-template/static/media/dxiconsmaterial.94b74e697ea85babc413.woff2",
     "index.html": "/devextreme-react-template/index.html",
-    "main.59da3ce5.css.map": "/devextreme-react-template/static/css/main.59da3ce5.css.map",
-    "main.2b9d5ad2.js.map": "/devextreme-react-template/static/js/main.2b9d5ad2.js.map",
-    "787.755f6c8a.chunk.js.map": "/devextreme-react-template/static/js/787.755f6c8a.chunk.js.map"
+    "main.89bedfb6.css.map": "/devextreme-react-template/static/css/main.89bedfb6.css.map",
+    "main.56f49574.js.map": "/devextreme-react-template/static/js/main.56f49574.js.map",
+    "787.5349e3d5.chunk.js.map": "/devextreme-react-template/static/js/787.5349e3d5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.59da3ce5.css",
-    "static/js/main.2b9d5ad2.js"
+    "static/css/main.89bedfb6.css",
+    "static/js/main.56f49574.js"
   ]
 }
