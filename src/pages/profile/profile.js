@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './profile.scss';
 import Form from 'devextreme-react/form';
 
-export default () => {
+export default function Profile() {
   const [notes, setNotes] = useState(
     'Sandra is a CPA and has been our controller since 2008. She loves to interact with staff so if you`ve not met her, be certain to say hi.\r\n\r\nSandra has 2 daughters both of whom are accomplished gymnasts.'
   );
@@ -13,7 +13,7 @@ export default () => {
     Prefix: 'Mrs.',
     Position: 'Controller',
     Picture: 'images/employees/06.png',
-    BirthDate: new Date('1974/11/15'),
+    BirthDate: new Date('1974/11/5'),
     HireDate: new Date('2005/05/11'),
     Notes: notes,
     Address: '4600 N Virginia Rd.'
@@ -21,7 +21,7 @@ export default () => {
 
   return (
     <React.Fragment>
-      <h2 className={'content-block'}>Profile</h2>
+      <h2>Profile</h2>
 
       <div className={'content-block dx-card responsive-paddings'}>
         <div className={'form-avatar'}>
@@ -46,7 +46,7 @@ export default () => {
       </div>
     </React.Fragment>
   );
-};
+}
 
 const colCountByScreen = {
   xs: 1,

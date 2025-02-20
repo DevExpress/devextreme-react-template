@@ -1,13 +1,15 @@
-import React, { useEffect, useRef, useCallback, useMemo } from 'react';
-import TreeView from 'devextreme-react/tree-view';
+import React, { useEffect, useRef, useCallback, useMemo, useContext } from 'react';
+import { TreeView } from 'devextreme-react/tree-view';
+import * as events from 'devextreme/events';
 import { navigation } from '../../app-navigation';
 import { useNavigation } from '../../contexts/navigation';
 import { useScreenSize } from '../../utils/media-query';
-import './side-navigation-menu.scss';
+import './SideNavigationMenu.scss';
 
-import * as events from 'devextreme/events';
 
-export default function (props) {
+import { ThemeContext } from '../../theme';
+
+export default function SideNavigationMenu(props) {
   const {
     children,
     selectedItemChanged,
@@ -16,14 +18,12 @@ export default function (props) {
     onMenuReady
   } = props;
 
+  const theme = useContext(ThemeContext);
   const { isLarge } = useScreenSize();
-  function normalizePath () {    
-    return navigation.map((item) => {
-      if(item.path && !(/^\//.test(item.path))){ 
-        item.path = `/${item.path}`;
-      }
-      return {...item, expanded: isLarge}; 
-    });
+  function normalizePath () {
+    return navigation.map((item) => (
+      { ...item, expanded: isLarge, path: item.path && !(/^\//.test(item.path)) ? `/${item.path}` : item.path }
+    ))
   }
 
   const items = useMemo(
@@ -34,8 +34,8 @@ export default function (props) {
 
   const { navigationData: { currentPath } } = useNavigation();
 
-  const treeViewRef = useRef();
-  const wrapperRef = useRef();
+  const treeViewRef = useRef(null);
+  const wrapperRef = useRef(null);
   const getWrapperRef = useCallback((element) => {
     const prevElement = wrapperRef.current;
     if (prevElement) {
@@ -43,13 +43,13 @@ export default function (props) {
     }
 
     wrapperRef.current = element;
-    events.on(element, 'dxclick', e => {
+    events.on(element, 'dxclick', (e) => {
       openMenu(e);
     });
   }, [openMenu]);
 
   useEffect(() => {
-    const treeView = treeViewRef.current && treeViewRef.current.instance;
+    const treeView = treeViewRef.current && treeViewRef.current.instance();
     if (!treeView) {
       return;
     }
@@ -66,7 +66,7 @@ export default function (props) {
 
   return (
     <div
-      className={'dx-swatch-additional side-navigation-menu'}
+      className={`dx-swatch-additional${theme?.isDark() ? '-dark' : ''} side-navigation-menu`}
       ref={getWrapperRef}
     >
       {children}

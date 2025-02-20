@@ -1,5 +1,7 @@
 import 'devextreme/dist/css/dx.common.css';
+import './themes/generated/theme.base.dark.css';
 import './themes/generated/theme.base.css';
+import './themes/generated/theme.additional.dark.css';
 import './themes/generated/theme.additional.css';
 import React from 'react';
 import { HashRouter as Router } from 'react-router-dom';
@@ -10,6 +12,7 @@ import { AuthProvider, useAuth } from './contexts/auth';
 import { useScreenSizeClass } from './utils/media-query';
 import Content from './Content';
 import UnauthenticatedContent from './UnauthenticatedContent';
+import { ThemeContext, useThemeContext} from "./theme";
 
 function App() {
   const { user, loading } = useAuth();
@@ -25,18 +28,21 @@ function App() {
   return <UnauthenticatedContent />;
 }
 
-export default function () {
+export default function Root() {
   const screenSizeClass = useScreenSizeClass();
+  const themeContext = useThemeContext();
 
   return (
     <Router>
-      <AuthProvider>
-        <NavigationProvider>
-          <div className={`app ${screenSizeClass}`}>
-            <App />
-          </div>
-        </NavigationProvider>
-      </AuthProvider>
+      <ThemeContext.Provider value={themeContext}>
+        <AuthProvider>
+          <NavigationProvider>
+            <div className={`app ${screenSizeClass}`}>
+              <App />
+            </div>
+          </NavigationProvider>
+        </AuthProvider>
+      </ThemeContext.Provider>
     </Router>
   );
 }
