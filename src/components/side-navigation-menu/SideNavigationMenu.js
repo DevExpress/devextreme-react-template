@@ -1,12 +1,13 @@
-import React, { useEffect, useRef, useCallback, useMemo } from 'react';
-import TreeView from 'devextreme-react/tree-view';
+import React, { useEffect, useRef, useCallback, useMemo, useContext } from 'react';
+import { TreeView } from 'devextreme-react/tree-view';
+import * as events from 'devextreme/events';
 import { navigation } from '../../app-navigation';
 import { useNavigation } from '../../contexts/navigation';
 import { useScreenSize } from '../../utils/media-query';
 import './SideNavigationMenu.scss';
 
 
-import * as events from 'devextreme/events';
+import { ThemeContext } from '../../theme';
 
 export default function SideNavigationMenu(props) {
   const {
@@ -17,6 +18,7 @@ export default function SideNavigationMenu(props) {
     onMenuReady
   } = props;
 
+  const theme = useContext(ThemeContext);
   const { isLarge } = useScreenSize();
   function normalizePath () {
     return navigation.map((item) => (
@@ -33,7 +35,7 @@ export default function SideNavigationMenu(props) {
   const { navigationData: { currentPath } } = useNavigation();
 
   const treeViewRef = useRef(null);
-  const wrapperRef = useRef();
+  const wrapperRef = useRef(null);
   const getWrapperRef = useCallback((element) => {
     const prevElement = wrapperRef.current;
     if (prevElement) {
@@ -47,7 +49,7 @@ export default function SideNavigationMenu(props) {
   }, [openMenu]);
 
   useEffect(() => {
-    const treeView = treeViewRef.current && treeViewRef.current.instance;
+    const treeView = treeViewRef.current && treeViewRef.current.instance();
     if (!treeView) {
       return;
     }
@@ -64,7 +66,7 @@ export default function SideNavigationMenu(props) {
 
   return (
     <div
-      className={'dx-swatch-additional side-navigation-menu'}
+      className={`dx-swatch-additional${theme?.isDark() ? '-dark' : ''} side-navigation-menu`}
       ref={getWrapperRef}
     >
       {children}

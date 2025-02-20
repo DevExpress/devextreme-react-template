@@ -1,6 +1,6 @@
 import Button from 'devextreme-react/button';
 import Drawer from 'devextreme-react/drawer';
-import ScrollView from 'devextreme-react/scroll-view';
+import { ScrollView } from 'devextreme-react/scroll-view';
 import Toolbar, { Item } from 'devextreme-react/toolbar';
 import React, { useState, useCallback, useRef } from 'react';
 import { useNavigate } from 'react-router';
@@ -55,7 +55,7 @@ export default function SideNavInnerToolbar({ title, children }) {
     }
 
     navigate(itemData.path);
-    scrollViewRef.current.instance.scrollTo(0);
+    scrollViewRef.current.instance().scrollTo(0);
 
     if (!isLarge || menuStatus === MenuStatus.TemporaryOpened) {
       setMenuStatus(MenuStatus.Closed);
