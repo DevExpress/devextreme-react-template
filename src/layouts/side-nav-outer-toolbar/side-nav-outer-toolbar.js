@@ -1,5 +1,5 @@
 import Drawer from 'devextreme-react/drawer';
-import ScrollView from 'devextreme-react/scroll-view';
+import { ScrollView } from 'devextreme-react/scroll-view';
 import React, { useState, useCallback, useRef } from 'react';
 import { useNavigate } from 'react-router';
 import { Header, SideNavigationMenu, Footer } from '../../components';
@@ -53,7 +53,7 @@ export default function SideNavOuterToolbar({ title, children }) {
     }
 
     navigate(itemData.path);
-    scrollViewRef.current.instance.scrollTo(0);
+    scrollViewRef.current.instance().scrollTo(0);
 
     if (!isLarge || menuStatus === MenuStatus.TemporaryOpened) {
       setMenuStatus(MenuStatus.Closed);
@@ -69,7 +69,7 @@ export default function SideNavOuterToolbar({ title, children }) {
         title={title}
       />
       <Drawer
-        className={['drawer', patchCssClass].join(' ')}
+        className={['drawer layout-body', patchCssClass].join(' ')}
         position={'before'}
         closeOnOutsideClick={onOutsideClick}
         openedStateMode={isLarge ? 'shrink' : 'overlap'}
@@ -81,7 +81,7 @@ export default function SideNavOuterToolbar({ title, children }) {
         template={'menu'}
       >
         <div className={'container'}>
-          <ScrollView ref={scrollViewRef} className={'layout-body with-footer'}>
+          <ScrollView ref={scrollViewRef} className={'with-footer'}>
             <div className={'content'}>
               {React.Children.map(children, (item) => {
                 return item.type !== Footer && item;
