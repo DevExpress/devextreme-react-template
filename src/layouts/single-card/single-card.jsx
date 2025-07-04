@@ -1,4 +1,3 @@
-import React from 'react';
 import ScrollView from 'devextreme-react/scroll-view';
 import './single-card.scss';
 

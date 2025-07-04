@@ -1,6 +1,8 @@
-import React, { useState, useEffect, createContext, useContext, useCallback } from 'react';
+import React, { useState, useEffect, useCallback, createContext } from 'react';
 import { getUser, signIn as sendSignInRequest } from '../api/auth';
 
+
+const AuthContext = createContext({ loading: false });
 
 function AuthProvider(props) {
   const [user, setUser] = useState();
@@ -36,7 +38,7 @@ function AuthProvider(props) {
   );
 }
 
-const AuthContext = createContext({ loading: false });
-const useAuth = () => useContext(AuthContext);
-
-export { AuthProvider, useAuth }
+export {
+  AuthProvider,
+  AuthContext,
+};

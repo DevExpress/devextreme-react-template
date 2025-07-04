@@ -1,4 +1,4 @@
-import React, { useState, useRef, useCallback } from 'react';
+import { useState, useRef, useCallback } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import Form, {
   Item,
@@ -11,7 +11,7 @@ import Form, {
 import LoadIndicator from 'devextreme-react/load-indicator';
 import Button from 'devextreme-react/button';
 import notify from 'devextreme/ui/notify';
-import { useAuth } from '../../contexts/auth';
+import { useAuth } from '../../contexts/auth-hooks';
 
 import './LoginForm.scss';
 
