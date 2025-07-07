@@ -1,5 +1,5 @@
 import React from 'react';
-import 'devextreme/data/odata/store';
+import { DataSource } from 'devextreme-react/common/data';
 import DataGrid, {
   Column,
   Pager,
@@ -9,7 +9,7 @@ import DataGrid, {
 } from 'devextreme-react/data-grid';
 import './tasks.scss';
 
-export default function Task() {
+export function Tasks() {
   return (
     <React.Fragment>
       <h2>Tasks</h2>
@@ -83,7 +83,7 @@ export default function Task() {
     </React.Fragment>
 )}
 
-const dataSource = {
+const dataSource = new DataSource({
   store: {
     version: 2,
     type: 'odata',
@@ -101,7 +101,7 @@ const dataSource = {
     'Task_Completion',
     'ResponsibleEmployee/Employee_Full_Name'
   ]
-};
+});
 
 const priorities = [
   { name: 'High', value: 4 },

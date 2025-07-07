@@ -1,7 +1,7 @@
 import React from 'react';
 import './home.scss';
 
-export default function Home() {
+export function Home() {
   return (
     <React.Fragment>
       <h2 className={'content-block'}>Home</h2>
@@ -68,7 +68,7 @@ export default function Home() {
           <p>Thanks for using the  DevExtreme React App Template.</p>
           <p>
             <span>This application was built using </span>
-            <a href={'https://create-react-app.dev/'} target={'_blank'} rel={'noopener noreferrer'}>Create React App</a>
+            <a href={'https://vite.dev/guide/'} target={'_blank'} rel={'noopener noreferrer'}>create-vite</a>
             <span> and </span>
             <a href={'https://js.devexpress.com/Documentation/Guide/Common/DevExtreme_CLI/'} target={'_blank'} rel={'noopener noreferrer'}>DevExtreme CLI</a>
             <span> and includes the following DevExtreme components:</span>
