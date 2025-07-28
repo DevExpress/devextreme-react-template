@@ -14,3 +14,7 @@ For more information about the DevExtreme React Template and how to customize it
 
 - [DevExtreme License](https://js.devexpress.com/Licensing/)
 - [Free trial](http://js.devexpress.com/Buy/)
+
+## See Also
+
+For DevExtreme React Template built with [Next.js](https://nextjs.org), refer to the following repository: [DevExtreme React Next.js Template](https://github.com/DevExpress/devextreme-nextjs-template).
