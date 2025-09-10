@@ -2,11 +2,17 @@ name: Deploy
 
 on:
   workflow_dispatch:
+    inputs:
+      base_path:
+        description: 'Custom base path (e.g. /my-repo/). Leave blank to auto-detect.'
+        required: false
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     timeout-minutes: 20
+    env:
+      BASE_PATH: ${{ github.event.inputs.base_path != '' && github.event.inputs.base_path || format('/{0}/', github.event.repository.name) }}
 
     steps:
     - name: Get sources
@@ -31,8 +37,9 @@ jobs:
 
     - name: Build
       run: |
+        echo "Using BASE_PATH=$BASE_PATH"
         rm -rf dist
-        npm run build
+        npx vite build --base "$BASE_PATH"
 
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@ba1486788b0490a235422264426c45848eac35c6
