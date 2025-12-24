@@ -1,4 +1,4 @@
-import { useState, useRef, useCallback } from 'react';
+import { useState, useCallback } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import Form, {
   Item,
@@ -16,12 +16,23 @@ import { changePassword } from '../../api/auth';
 export default function ChangePasswordForm() {
   const navigate = useNavigate();
   const [loading, setLoading] = useState(false);
-  const formData = useRef({ password: '' });
+  const [formData, setFormData] = useState({ password: '' });
   const { recoveryCode } = useParams();
+
+  const onFieldDataChanged = useCallback((e) => {
+    const { dataField, value } = e;
+
+    if (dataField) {
+      setFormData(formData => ({
+        ...formData,
+        [dataField]: value,
+      }));
+    }
+  }, []);
 
   const onSubmit = useCallback(async (e) => {
     e.preventDefault();
-    const { password } = formData.current;
+    const { password } = formData;
     setLoading(true);
 
     const result = await changePassword(password, recoveryCode);
@@ -32,16 +43,16 @@ export default function ChangePasswordForm() {
     } else {
       notify(result.message, 'error', 2000);
     }
-  }, [navigate, recoveryCode]);
+  }, [navigate, recoveryCode, formData]);
 
   const confirmPassword = useCallback(
-    ({ value }) => value === formData.current.password,
-    []
+    ({ value }) => value === formData.password,
+    [formData]
   );
 
   return (
     <form onSubmit={onSubmit}>
-      <Form formData={formData.current} disabled={loading}>
+      <Form formData={formData} disabled={loading} onFieldDataChanged={onFieldDataChanged}>
         <Item
           dataField={'password'}
           editorType={'dxTextBox'}

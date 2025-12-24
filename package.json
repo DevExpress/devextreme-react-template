@@ -12,24 +12,24 @@
     "postinstall": "npm run build-themes"
   },
   "dependencies": {
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
     "sass-embedded": "^1.85.1",
     "react-router-dom": "^6.3.0",
-    "devextreme": "25.1.3",
-    "devextreme-react": "25.1.3"
+    "devextreme": "25.2.3",
+    "devextreme-react": "25.2.3"
   },
   "devDependencies": {
-    "@eslint/js": "^9.29.0",
-    "@types/react": "^19.1.8",
-    "@types/react-dom": "^19.1.6",
-    "@vitejs/plugin-react": "^4.5.2",
-    "eslint": "^9.29.0",
-    "eslint-plugin-react-hooks": "^5.2.0",
-    "eslint-plugin-react-refresh": "^0.4.20",
-    "globals": "^16.2.0",
-    "vite": "^7.0.0",
-    "devextreme-cli": "1.11.0",
-    "devextreme-themebuilder": "25.1.3"
+    "@eslint/js": "^9.39.1",
+    "@types/react": "^19.2.5",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^5.1.1",
+    "eslint": "^9.39.1",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-refresh": "^0.4.24",
+    "globals": "^16.5.0",
+    "vite": "^7.2.4",
+    "devextreme-cli": "1.13.0",
+    "devextreme-themebuilder": "25.2.3"
   }
 }
