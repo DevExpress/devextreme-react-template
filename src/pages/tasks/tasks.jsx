@@ -1,22 +1,31 @@
-import React from 'react';
-import { DataSource } from 'devextreme-react/common/data';
-import DataGrid, {
+import React, { useState, useEffect } from 'react';
+import {
+  DataGrid,
   Column,
   Pager,
   Paging,
-  FilterRow,
-  Lookup
+  FilterRow
 } from 'devextreme-react/data-grid';
+import axios from 'axios';
 import './tasks.scss';
 
+const baseUrl = 'https://js.devexpress.com/Demos/RwaService/api';
+const getTasks = async () => (await axios.get(`${baseUrl}/Employees/AllTasks`)).data;
+
 export function Tasks() {
+  const [gridData, setGridData] = useState([]);
+
+  useEffect(() => {
+    getTasks().then(setGridData).catch(console.log);
+  }, []);
+
   return (
     <React.Fragment>
       <h2>Tasks</h2>
 
       <DataGrid
         className={'dx-card content-block'}
-        dataSource={dataSource}
+        dataSource={gridData}
         showBorders={false}
         focusedRowEnabled={true}
         defaultFocusedRowIndex={0}
@@ -27,85 +36,42 @@ export function Tasks() {
         <Pager showPageSizeSelector={true} showInfo={true} />
         <FilterRow visible={true} />
 
-        <Column dataField={'Task_ID'} width={90} hidingPriority={2} />
+        <Column dataField={'id'} width={90} hidingPriority={1} />
         <Column
-          dataField={'Task_Subject'}
+          dataField={'text'}
           width={190}
           caption={'Subject'}
-          hidingPriority={8}
-        />
-        <Column
-          dataField={'Task_Status'}
-          caption={'Status'}
           hidingPriority={6}
         />
         <Column
-          dataField={'Task_Priority'}
-          caption={'Priority'}
-          hidingPriority={5}
-        >
-          <Lookup
-            dataSource={priorities}
-            valueExpr={'value'}
-            displayExpr={'name'}
-          />
-        </Column>
-        <Column
-          dataField={'ResponsibleEmployee.Employee_Full_Name'}
-          caption={'Assigned To'}
-          allowSorting={false}
-          hidingPriority={7}
+          dataField={'status'}
+          caption={'Status'}
+          hidingPriority={4}
         />
         <Column
-          dataField={'Task_Start_Date'}
+          dataField={'owner'}
+          caption={'Assigned To'}
+          allowSorting={false}
+          hidingPriority={5}
+        />
+        <Column
+          dataField={'startDate'}
           caption={'Start Date'}
+          dataType={'date'}
+          hidingPriority={2}
+        />
+        <Column
+          dataField={'dueDate'}
+          caption={'Due Date'}
           dataType={'date'}
           hidingPriority={3}
         />
         <Column
-          dataField={'Task_Due_Date'}
-          caption={'Due Date'}
-          dataType={'date'}
-          hidingPriority={4}
-        />
-        <Column
-          dataField={'Task_Priority'}
+          dataField={'priority'}
           caption={'Priority'}
-          name={'Priority'}
-          hidingPriority={1}
-        />
-        <Column
-          dataField={'Task_Completion'}
-          caption={'Completion'}
           hidingPriority={0}
         />
       </DataGrid>
     </React.Fragment>
-)}
-
-const dataSource = new DataSource({
-  store: {
-    version: 2,
-    type: 'odata',
-    key: 'Task_ID',
-    url: 'https://js.devexpress.com/Demos/DevAV/odata/Tasks'
-  },
-  expand: 'ResponsibleEmployee',
-  select: [
-    'Task_ID',
-    'Task_Subject',
-    'Task_Start_Date',
-    'Task_Due_Date',
-    'Task_Status',
-    'Task_Priority',
-    'Task_Completion',
-    'ResponsibleEmployee/Employee_Full_Name'
-  ]
-});
-
-const priorities = [
-  { name: 'High', value: 4 },
-  { name: 'Urgent', value: 3 },
-  { name: 'Normal', value: 2 },
-  { name: 'Low', value: 1 }
-];
+  );
+}
