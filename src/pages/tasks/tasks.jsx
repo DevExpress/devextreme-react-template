@@ -6,11 +6,10 @@ import {
   Paging,
   FilterRow
 } from 'devextreme-react/data-grid';
-import axios from 'axios';
 import './tasks.scss';
 
 const baseUrl = 'https://js.devexpress.com/Demos/RwaService/api';
-const getTasks = async () => (await axios.get(`${baseUrl}/Employees/AllTasks`)).data;
+const getTasks = async () => (await fetch(`${baseUrl}/Employees/AllTasks`)).json();
 
 export function Tasks() {
   const [gridData, setGridData] = useState([]);
