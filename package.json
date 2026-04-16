@@ -1,6 +1,7 @@
 {
   "name": "devextreme-react-template",
   "version": "0.1.0",
+  "packageManager": "pnpm@9.15.9",
   "private": true,
   "type": "module",
   "scripts": {
@@ -9,7 +10,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "build-themes": "devextreme build",
-    "postinstall": "npm run build-themes"
+    "postinstall": "pnpm run build-themes"
   },
   "dependencies": {
     "react": "^19.2.0",
