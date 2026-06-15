@@ -14,9 +14,6 @@ importers:
       devextreme-react:
         specifier: 25.2.3
         version: 25.2.3(devextreme@25.2.3)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
-      esbuild:
-        specifier: ^0.28.1
-        version: 0.28.1
       react:
         specifier: ^19.2.5
         version: 19.2.5
@@ -48,6 +45,9 @@ importers:
       devextreme-themebuilder:
         specifier: 25.2.3
         version: 25.2.3(bootstrap@5.3.8(@popperjs/core@2.11.8))
+      esbuild:
+        specifier: ^0.28.1
+        version: 0.28.1
       eslint:
         specifier: ^9.39.4
         version: 9.39.4
