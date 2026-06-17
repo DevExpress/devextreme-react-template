@@ -13,7 +13,7 @@
     "postinstall": "pnpm run build-themes"
   },
   "dependencies": {
-    "devextreme": "25.2.3",
+    "devextreme": "25.2.8",
     "devextreme-react": "25.2.3",
     "react": "^19.2.5",
     "react-dom": "^19.2.5",
