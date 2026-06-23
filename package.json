@@ -26,7 +26,7 @@
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^6.0.2",
     "devextreme-cli": "1.13.0",
-    "devextreme-themebuilder": "25.2.3",
+    "devextreme-themebuilder": "25.2.8",
     "esbuild": "^0.28.1",
     "eslint": "^9.39.4",
     "eslint-plugin-react-hooks": "^7.0.1",
