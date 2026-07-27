@@ -17,7 +17,7 @@
     "devextreme-react": "25.2.3",
     "react": "^19.2.5",
     "react-dom": "^19.2.5",
-    "react-router-dom": "^6.30.4",
+    "react-router-dom": "7.18.0",
     "sass-embedded": "^1.99.0"
   },
   "devDependencies": {
@@ -28,7 +28,7 @@
     "devextreme-cli": "1.13.0",
     "devextreme-themebuilder": "25.2.3",
     "esbuild": "^0.28.1",
-    "eslint": "^9.39.4",
+    "eslint": "10.8.0",
     "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-react-refresh": "^0.4.26",
     "globals": "^16.5.0",
