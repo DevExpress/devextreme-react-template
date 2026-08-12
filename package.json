@@ -13,8 +13,8 @@
     "postinstall": "pnpm run build-themes"
   },
   "dependencies": {
-    "devextreme": "25.2.3",
-    "devextreme-react": "25.2.3",
+    "devextreme": "26.1.4",
+    "devextreme-react": "26.1.4",
     "react": "^19.2.5",
     "react-dom": "^19.2.5",
     "react-router-dom": "7.18.0",
@@ -25,8 +25,8 @@
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^6.0.2",
-    "devextreme-cli": "1.13.0",
-    "devextreme-themebuilder": "25.2.3",
+    "devextreme-cli": "1.17.0",
+    "devextreme-themebuilder": "26.1.4",
     "esbuild": "^0.28.1",
     "eslint": "10.8.0",
     "eslint-plugin-react-hooks": "^7.0.1",
